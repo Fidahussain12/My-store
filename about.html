@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="images/image/favicon.PNG">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome cdn -->
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Css File Link -->
+     <!-- Google fonts link -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <!-- Google fonts link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+
+
+.brand-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-links li {
+    padding: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+.about-us-container {
+    background: white;
+    padding: 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    height: 600%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member .role {
+    color: #777;
+}
+
+.team-member .info {
+    display: none;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i>Grocery</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#Products">Products</a>
+            <a href="#Categories">Categories</a>
+            <a href="blog.html">Blogs</a>
+            
+        </nav>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-1.png">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">$5.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-2.png">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">$4.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-3.png">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">$4.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="total">total : $18.97 </div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        
+        <!-- Login form -->
+         <form action="#" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Enter Your Email" class="box">
+            <input type="password" placeholder="Enter Your Password" class="box">
+            <p>Forget Your Password <a href="Password forget.html"> Click Here </a></p>
+            <p>Dont Have An Account <a href="Craete account.html"> Create Now </a></p>
+            <input type="submit" value="Login Now" class="btn">
+        
+        </form>
+    </header>
+    <div class="about-us-container">
+        <h1>About Us</h1>
+        <div class="team-container">
+            <div class="team-member" onclick="toggleInfo(this)">
+                <img src="about img/hu.jpeg" alt="Person 1">
+                <h3>Hussain Ali</h3>
+                <p class="role">CEO & Founder</p>
+                <p class="info">Hussain has over 20 years of experience in the tech industry...</p>
+            </div>
+            <div class="team-member" onclick="toggleInfo(this)">
+                <img src="about img/wa.jpeg" alt="Person 2">
+                <h3>Wafa Hussain</h3>
+                <p class="role">CTO</p>
+                <p class="info">Wafa is a tech visionary with a passion for innovation...</p>
+            </div>
+            <div class="team-member" onclick="toggleInfo(this)">
+                <img src="about img/ra.jpeg" alt="Person 3">
+                <h3>Aiza Batool</h3>
+                <p class="role">Lead Developer</p>
+                <p class="info">Aiza is a coding genius, known for his problem-solving skills...</p>
+            </div>
+            
+        </div>
+    </div>
+
+     <!-- footer Section -->
+  <footer class="container">
+    <div class="container">
+        <div class="krow">
+            <div class="footer-col">
+                <h4> Properties </h4>
+                <ul class="io">
+                    <li ><a href="index.html" >Home</a></li>
+                    <li ><a href="about.html" >About</a></li>
+                    <li ><a href="contactus.html" >Contact Us</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- 2nd column -->
+            <div class="footer-col">
+                <h4> Finegap </h4>
+                <ul class="io">
+                    <li><a href="https://youtu.be/HAmeeWuQWx0?si=Mpb1wsEFPS5SgJ-L">Healthy Breakfasts</a></li>
+                    <li><a href="https://youtu.be/JmOBM160jZ0?si=zk0vpBSkzenBIeNu">Health Tip</a></li>
+                    <li><a href="https://youtu.be/rctONIZJxh8?si=zv-AN3_pBp8N11bC">Healthy Drink</a></li>
+                    
+                </ul>
+            </div>
+            <!-- 3rd column -->
+           
+            <!-- 4th column -->
+            <div class="footer-col">
+                <h4> Newlatter </h4>
+                <form action="">
+                    <input type="text" placeholder="Your Name" class="inputName" required>
+                    <input type="email" placeholder="Enter Your Email" class="inputEmail" required>
+                    <input type="submit" value="Submit" class="inputSubmit">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="krow">
+            <div class="col">
+                <p>&#169; 2024 Finegap. All Rights Reserved</p>
+            </div>
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/itz_hussain_12/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://youtube.com/@code_with_hussain?si=zmXT81JSGs5qzOhH"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+    <script >
+        function toggleMenu() {
+    const navbarLinks = document.querySelector('.navbar-links');
+    if (navbarLinks.style.display === 'flex') {
+        navbarLinks.style.display = 'none';
+    } else {
+        navbarLinks.style.display = 'flex';
+    }
+}
+
+function toggleInfo(element) {
+    const info = element.querySelector('.info');
+    if (info.style.display === "none" || info.style.display === "") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+}
+
+    </script>
+    <script src="script.JS"></script>
+</body>
+</html>

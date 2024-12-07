@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="images/image/favicon.PNG">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome cdn -->
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Css File Link -->
+     <!-- Google fonts link -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <!-- Google fonts link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Outfit';
+            background: linear-gradient(to right, #00ff00, #00cc66, #008000);
+        }
+        .contact-container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+        .contact-left-tittle h2{
+            font-weight: 600 ;
+            color: #a363aa;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .contact-left-tittle hr{
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #a363aa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-inputs{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+            border-radius: 50px;
+        }
+        .contact-left textarea{
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+        .contact-inputs:focus{
+            border: 2px solid #ff994f;
+        }
+        .contact-inputs::placeholder{
+            color: #a9a9a9;
+        }
+        .contact-left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #008000;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg #ff994f, #fa6d86);
+            cursor: pointer;
+            
+        }
+        .contact-left button:hover{
+            background: black;
+            color: white;
+        }
+        .contact-left button img{
+            height: 15px;
+        }
+        .contact-right img{
+            width: 500px;
+            height: 300px;
+        }
+        @media(max-width:800px){
+            .contact-inputs{
+                width: 80vw;
+            }
+            .contact-right{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i>Grocery</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#Products">Products</a>
+            <a href="#Categories">Categories</a>
+            <a href="blog.html">Blogs</a>
+            
+        </nav>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-1.png">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">$5.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-2.png">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">$4.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="images/image/cart-img-3.png">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">$4.99</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+            <div class="total">total : $18.97 </div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        
+        <!-- Login form -->
+         <form action="#" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Enter Your Email" class="box">
+            <input type="password" placeholder="Enter Your Password" class="box">
+            <p>Forget Your Password <a href="Password forget.html"> Click Here </a></p>
+            <p>Dont Have An Account <a href="Craete account.html"> Create Now </a></p>
+            <input type="submit" value="Login Now" class="btn">
+        
+        </form>
+    </header>
+    <!-- Header Section -->
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="5be86e52-91e2-403b-ba76-779c0a004d84">
+            <input type="text" name="placeholder" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="placeholder" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" id="" placeholder="Your Massage" class="contact-inputs"required></textarea>
+            <button type="submit">Submit <img src="" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="contactus img/icon2.jpg" alt="">
+        </div>
+    </div>
+
+
+     <!-- footer Section -->
+  <footer class="container">
+    <div class="container">
+        <div class="krow">
+            <div class="footer-col">
+                <h4> Properties </h4>
+                <ul class="io">
+                    <li ><a href="index.html" >Home</a></li>
+                    <li ><a href="about.html" >About</a></li>
+                    <li ><a href="contactus.html" >Contact Us</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- 2nd column -->
+            <div class="footer-col">
+                <h4> Finegap </h4>
+                <ul class="io">
+                    <li><a href="https://youtu.be/HAmeeWuQWx0?si=Mpb1wsEFPS5SgJ-L">Healthy Breakfasts</a></li>
+                    <li><a href="https://youtu.be/JmOBM160jZ0?si=zk0vpBSkzenBIeNu">Health Tip</a></li>
+                    <li><a href="https://youtu.be/rctONIZJxh8?si=zv-AN3_pBp8N11bC">Healthy Drink</a></li>
+                    
+                </ul>
+            </div>
+            <!-- 3rd column -->
+           
+            <!-- 4th column -->
+            <div class="footer-col">
+                <h4> Newlatter </h4>
+                <form action="">
+                    <input type="text" placeholder="Your Name" class="inputName" required>
+                    <input type="email" placeholder="Enter Your Email" class="inputEmail" required>
+                    <input type="submit" value="Submit" class="inputSubmit">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="krow">
+            <div class="col">
+                <p>&#169; 2024 Finegap. All Rights Reserved</p>
+            </div>
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/itz_hussain_12/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://youtube.com/@code_with_hussain?si=zmXT81JSGs5qzOhH"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+    <script src="script.JS"></script>
+</body>
+</html>

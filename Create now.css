@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCCEB5;
+}
+.create {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.now {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.create.now::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: green;
+}
+.create form .userdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .userdetails .inputbox {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.userdetails .inputbox .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.userdetails .inputbox input {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.userdetails .inputbox input:focus,
+.userdetails .inputbox input:valid {
+    border-color: green;
+}
+form .genderdeatils .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+form .genderdeatils .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;    
+}
+.genderdeatils .category label {
+    display: flex;
+    align-items: center;
+}
+.genderdeatils .category .dot {
+    height: 20px;
+    width: 20px;
+    background:green ;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"] {
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:#fff ;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    background: green;
+    letter-spacing: 1px;
+}
+form .button input:hover{
+    color: white;
+    background-color: black;
+}
+.success {
+    color: black;
+    text-align: center;
+    font-size: 20px;   
+}
+@media(max-width: 584px){
+    .create {
+        max-width: 100%;
+    }
+    form .userdetails .inputbox {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .genderdeatils .category {
+        width: 100%;
+    }
+    .create form .userdetails{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .userdetails::-webkit-scrollbar{
+        width: 0.5px;
+    }
+}
